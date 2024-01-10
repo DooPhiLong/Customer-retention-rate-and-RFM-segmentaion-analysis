@@ -56,6 +56,8 @@ Suppose you are the manager of a retail store and you have performed the followi
 
 ## 🔎 Analysis
 
+[Click here and wait a few seconds](https://github.com/DooPhiLong/Customer-retention-rate-and-RFM-segmentaion-analysis/blob/main/Retail%20store%20analysis.ipynb)
+
 ## Methods apply
 - Data cleanning
 - Data Preproccessing

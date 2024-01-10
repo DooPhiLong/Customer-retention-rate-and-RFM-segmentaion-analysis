@@ -4,51 +4,62 @@
 
 
 ## 💼 Case study
-- Based on a data set about the behaviors, characteristics, and services that customers have used of a telecommunications services sector and internet service providers. Build machine learning algorithm models to predict customer churn rates.
-- From there, the service provider can determine which customers are most likely to stay in the store for the longest time to be able to offer them loyalty policies. But the main purpose is to be able to determine which customers are most likely to leave in the near future so that the service provider can offer policies to advise on needs, make modifications and take care of customers, increase communication and information sharing to retain them. The ultimate goal is to help service providers retain as many customers as possible
+Suppose you are the manager of a retail store and you have performed the following analyzes on the store's sales data over a period of time:
+
+- **Analyze new and old customers:** You have analyzed the difference between new and old customers. By using criteria such as number of purchases, order value, and time of last purchase, you create groups of new and returning customers to understand the purchasing behavior of each group.
+
+- **RFM clustering:** You have used RFM analysis (Recency, Frequency, Monetary) to classify customers into groups based on the following criteria: time of last purchase (Recency), number of purchases (Frequency ) and order value (Monetary). RFM analysis helps you identify high-value customer groups, potential customers, and customers that need attention
+
+- **Analyzing product purchases using the Apriori algorithm:** You used the Apriori algorithm to analyze the rules related to purchasing products together. The results of this analysis show the top 5 pairs of items most commonly purchased together.
+- 
 ## 🔆 Target output
-- **Customer churn prediction**: With the customer churn prediction model, service providers can pre-identify customers with a tendency to churn. This helps focus on maintaining and improving customer satisfaction and implementing more effective customer retention measures.
+- **Determine the target:**
+     + Increase the return purchase rate of current customers to a higher level
+     + Increase revenue from highvalue, mediumvalue and lowvalue customer groups.
 
-- **Customer retention strategies**:: Based on predicted results, service providers can build customer retention strategies to increase customer engagement and engagement. These strategies may include promotions, personalized consulting services, or improving the service experience to create customer satisfaction and loyalty.
+- **Customer group analysis:**
+     + Consider the characteristics of each highvalue, mediumvalue and lowvalue customer group.
+     + Identify factors that affect the loyalty and purchasing activities of each customer group.
 
-- **Optimize marketing campaigns**:: Understanding the factors that influence customer churn, service providers can optimize marketing and advertising campaigns. By focusing on customers at higher risk of churn, service providers can promote personalized marketing campaigns, increase engagement, and create value for customer retention.
+- **Determine strategy:**
+     + Enhance customer experience: Ensure that customers receive quality service, dedicated support and a good purchasing experience.
+     + Loyalty program: Develop and implement a loyalty program to encourage and give special treatment to loyal customers.
+     + Reach through media channels: Use media channels to communicate with current customers, share information about promotions, events and new products.
+     + Customize marketing campaigns: Use information about customer groups to create targeted and personalized marketing campaigns to increase engagement and purchases from each group.
 
-- **Enhance business performance**:: By reducing customer churn, service providers can maintain and expand their existing customer base. This helps increase revenue and profits, while reducing costs associated with finding, attracting and maintaining new customers.
+- **Deploy and monitor:**
+     + Implement customer loyalty strategies and programs.
+     + Track return-to-purchase metrics of current customers and revenue from customer groups.
+     + Continuously evaluate and adjust strategy to achieve your goals of increased loyalty and increased revenue.
 ## 📁 Data set
-### I only have 1 data table 7043 rows and 21 features about customer behavioral information, below are 5 rows of sample data :
+### A Sale table with 8 columns and 541909 records of Purchase orders dataset
 
-![image](https://github.com/DooPhiLong/Customer-Churn-Rate-Prediction/assets/120476961/a368b568-dca1-4484-81e9-69d9156e1eb8)
+![image](https://github.com/DooPhiLong/Customer-retention-rate-and-RFM-segmentaion-analysis/assets/120476961/c0c4eed7-e632-479d-837c-d0884dc0d131)
 
-![image](https://github.com/DooPhiLong/Customer-Churn-Rate-Prediction/assets/120476961/f0016c47-62d0-498b-81d9-e16aa7b07859)
 
 ### Detail features
-- **CustomerID**:: Customer ID, uniquely representing each customer in the data set.
-- **Gender**: The customer's gender, can be "Male" (Male) or "Female" (Female).
-- **SeniorCitizen**: Senior citizen status, value 0 or 1. 0 represents not a senior citizen, 1 represents a senior citizen.
-- **Partner**: Marital or cohabitation status, with value "Yes" or "No". "Yes" corresponds to married or living together, "No" corresponds to not married or living together.
-- **Dependents**: The state of having dependents, with value "Yes" or "No". "Yes" corresponds to having dependents, "No" corresponds to having no dependents.
-- **Tenure**: Time (number of months) the customer has used the retail store's services.
-- **PhoneService**: Phone service usage status, with value "Yes" or "No". "Yes" corresponds to using phone service, "No" corresponds to not using phone service.
-- **MultipleLines**: Status of using multiple phone services, with values "Yes", "No" or "No phone service". "Yes" corresponds to using many phone services, "No" corresponds to not using many phone services, "No phone service" corresponds to no phone service.
-- **InternetService**: Type of Internet service used, with value "DSL" (Digital Subscriber Line), "Fiber optic" (Optic fiber optic) or "No" (Do not use Internet service).
-- **OnlineSecurity**: Status of using online security services, with value "Yes", "No" or "No internet service". "Yes" corresponds to using online security services, "No" corresponds to not using - Online security services, "No internet service" corresponds to no Internet service.
-- **OnlineBackup**: Status of using online backup service, with value "Yes", "No" or "No internet service". "Yes" corresponds to using online backup service, "No" corresponds to not using online - Backup service, "No internet service" corresponds to no Internet service.
-- **DeviceProtection**: Device protection service usage status, with value "Yes", "No" or "No internet service". "Yes" corresponds to using device protection service, "No" corresponds to not using device protection service, "No internet service" corresponds to no Internet service.
-- **TechSupport**: Status of using technical support service, with value "Yes", "No" or "No internet service". "Yes" corresponds to using technical support service, "No" corresponds to not using - Technical support service, "No internet service" corresponds to no Internet service.
-- **StreamingTV**: Status of using online TV viewing service, with value "Yes", "No" or "No internet service". "Yes" corresponds to using online TV viewing service, "No" corresponds to not using - Online TV viewing service, "No internet service" corresponds to not having Internet service.
-- **StreamingMovies**: Status of using online movie watching service, with value "Yes", "No" or "No internet service". "Yes" corresponds to using online movie watching service, "No" corresponds to not using online movie watching service, "No internet service" corresponds to not having Internet service.
-- **Contract**: Contract type, valid "Month-to-month", "One year" or "Two year".
-- **PaperlessBilling**: Status of using electronic invoices, with value "Yes" or "No". "Yes" corresponds to using electronic invoices, "No" corresponds to not using electronic invoices.
-- **PaymentMethod**: Payment method, including "Electronic check", "Mailed check", "Bank transfer (automatic)" and "Credit card (automatic)" (automatic credit card).
-- **MonthlyCharges**: The customer's monthly payment amount.
-- **TotalCharges**: Total amount of the customer's payment.
-- **Return**: Customer status, with value "Yes" or "No". "Yes" corresponds to customers who have left the store, "No" corresponds to customers who have not left.
+- **InvoiceNo:** This is a unique number assigned to each sales transaction.
+
+- **StockCode:** This is a unique code that represents each item in the store.
+
+- **Description:** Here is a detailed description of the item.
+
+- **Quantity:** This is the quantity of the item purchased per transaction.
+
+- **InvoiceDate:** This is the date the sale was made.
+
+- **UnitPrice:** This is the price of each unit of the item sold.
+
+- **CustomerID:** This is a unique number that represents each customer.
+
+- **Country:** This is the country the customer is from.
+
 ## 🔎 Analysis
-[Click here and wait a few seconds](https://github.com/DooPhiLong/Customer-Churn-Rate-Prediction/blob/main/Project%20Customer%20churn%20classification.ipynb)
+
 ## Methods apply
 - Data cleanning
 - Data Preproccessing
 - Data Mining
-- Data modeling (K-NN, Logistic regression, Random forrest, Perceptron, Naive Bayes, Decision tree, Neraul network)
+- Data Clustering (K-mean)
      
 

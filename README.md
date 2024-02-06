@@ -6,11 +6,11 @@
 ## 💼 Case study
 Suppose you are the manager of a retail store and you have performed the following analyzes on the store's sales data over a period of time:
 
-- **Analyze new and old customers:** You have analyzed the difference between new and old customers. By using criteria such as number of purchases, order value, and time of last purchase, you create groups of new and returning customers to understand the purchasing behavior of each group.
+- **Analyze new and old customers:** The difference between new and old customers. By using criteria such as number of purchases, order value, and time of last purchase, then create groups of new and returning customers to understand the purchasing behavior of each group.
 
-- **RFM clustering:** You have used RFM analysis (Recency, Frequency, Monetary) to classify customers into groups based on the following criteria: time of last purchase (Recency), number of purchases (Frequency ) and order value (Monetary). RFM analysis helps you identify high-value customer groups, potential customers, and customers that need attention
+- **RFM clustering:** Use RFM analysis (Recency, Frequency, Monetary) to classify customers into groups based on the following criteria: time of last purchase (Recency), number of purchases (Frequency ) and order value (Monetary). RFM analysis helps to identify high-value customer groups, potential customers, and customers that need attention
 
-- **Analyzing product purchases using the Apriori algorithm:** You used the Apriori algorithm to analyze the rules related to purchasing products together. The results of this analysis show the top 5 pairs of items most commonly purchased together.
+- **Analyzing product purchases using the Apriori algorithm:**Use Apriori algorithm to analyze the rules related to purchasing products together. The results of this analysis show the top 5 pairs of items most commonly purchased together.
 - 
 ## 🔆 Target output
 - **Determine the target:**

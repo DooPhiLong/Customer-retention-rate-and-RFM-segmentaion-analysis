@@ -10,8 +10,8 @@ Suppose you are the manager of a retail store and you have performed the followi
 
 - **RFM clustering:** Use RFM analysis (Recency, Frequency, Monetary) to classify customers into groups based on the following criteria: time of last purchase (Recency), number of purchases (Frequency ) and order value (Monetary). RFM analysis helps to identify high-value customer groups, potential customers, and customers that need attention
 
-- **Analyzing product purchases using the Apriori algorithm:**Use Apriori algorithm to analyze the rules related to purchasing products together. The results of this analysis show the top 5 pairs of items most commonly purchased together.
-- 
+- **Analyzing product purchases using the Apriori algorithm:** Use Apriori algorithm to analyze the rules related to purchasing products together. The results of this analysis show the top 5 pairs of items most commonly purchased together.
+
 ## 🔆 Target output
 - **Determine the target:**
      + Increase the return purchase rate of current customers to a higher level
